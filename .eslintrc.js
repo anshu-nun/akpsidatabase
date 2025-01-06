@@ -25,10 +25,10 @@ module.exports = {
     "import",
   ],
   rules: {
-    "quotes": "off",
-    "import/no-unresolved": "off",
-    "indent": "off",
-    "no-unused-vars": "off",
-    "no-redeclare": "off"
+    // "quotes": "off",
+    // "import/no-unresolved": "off",
+    // "indent": "off",
+    // "no-unused-vars": "off",
+    // "no-redeclare": "off"
   },
 };
