@@ -1,0 +1,1 @@
+Missing essential info in row 354: {'Pledge Class': 'Zeta Omicron (Spring 2024)', 'Name': 'Adya Gulati', 'Major': nan, 'Company': nan, 'Title': nan, 'Location': nan, 'LinkedIn': 'https://www.linkedin.com/in/adya-gulati-2803182b8/'}

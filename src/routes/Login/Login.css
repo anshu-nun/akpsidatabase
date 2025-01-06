@@ -1,0 +1,44 @@
+.word-1 {
+    animation: phil-anim 4s linear infinite;
+    --color-1: rgb(234 179 8);
+    --color-2: rgb(30 64 175);
+  }
+
+@keyframes phil-anim {
+  0% {
+    color: var(--color-1)
+  }
+
+  24% {
+    color: var(--color-1)
+  }
+
+  25% {
+    color: var(--color-2)
+  }
+
+  50% {
+    color: var(--color-2)
+  }
+
+  51% {
+    color: var(--color-1)
+  }
+
+  75% {
+    color: var(--color-1)
+  }
+
+  76% {
+    color: var(--color-2)
+  }
+
+  99% {
+    color: var(--color-2)
+  }
+
+  100% {
+    color: var(--color-1)
+  }
+}
+
