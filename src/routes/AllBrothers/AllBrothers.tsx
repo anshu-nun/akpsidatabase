@@ -124,7 +124,7 @@ const AllBrothers = () => {
                                         <div className="flex justify-between items-center">
                                             <span>{`${brother.first_name} ${brother.last_name}`}</span>
                                             <a href={brother?.linkedin} target="_blank" rel="noopener noreferrer">
-                                                <img src={linkedin} className='size-8'></img>
+                                                <img src={linkedin} alt = 'img' className='size-8'></img>
                                             </a>
                                         </div>
                                     </td>

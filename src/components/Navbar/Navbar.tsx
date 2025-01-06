@@ -1,6 +1,3 @@
-import React from 'react';
-import { Navigate } from 'react-router-dom';
-import akpsiLogo from '../../assets/akpsi.png';
 
 const Navbar = () => {
 

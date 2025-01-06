@@ -1,16 +1,16 @@
 import React from 'react';
 
-interface Brother {
-    id: string;
-    company: string;
-    first_name: string;
-    last_name: string;
-    linkedin: string;
-    location: string;
-    majors: string[];
-    title: string;
-    pledge_class: string;
-}
+// interface Brother {
+//     id: string;
+//     company: string;
+//     first_name: string;
+//     last_name: string;
+//     linkedin: string;
+//     location: string;
+//     majors: string[];
+//     title: string;
+//     pledge_class: string;
+// }
 
 interface SearchBarProps {
     filterBrothers: (query: string) => void; // Type definition for the function prop

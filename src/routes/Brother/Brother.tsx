@@ -59,7 +59,7 @@ const Brother = () => {
     useEffect(() => {
         fetchBrothers();
         console.log(brother)
-    }, []);
+    });
 
     if (loading) {
         return (
@@ -72,14 +72,14 @@ const Brother = () => {
             <Navbar/>
             <div className='flex flex-row items-center justify-center py-4 h-[calc(100vh-98px)]'>
                 <a className='active pl-4 blue-800' href='/all'>
-                    <img src={back}></img>
+                    <img src={back} alt='back icon'></img>
                 </a>
                 <div className='flex flex-col min-h-min items-center basis-1/2 flex-shrink'>
-                    <img src={defaultpfp} className="rounded-lg border border-gray-300 shadow-md"></img>
+                    <img src={defaultpfp} alt='img' className="rounded-lg border border-gray-300 shadow-md"></img>
                     <div className='flex flex-row items-center justify-center py-6'>
                         <h1 className='px-4'>{`${brother?.first_name} ${brother?.last_name}`}</h1>
                         <a href={brother?.linkedin} target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} className='size-10'></img>
+                            <img src={linkedin} alt='logo' className='size-10'></img>
                         </a>
                     </div>
                 </div>

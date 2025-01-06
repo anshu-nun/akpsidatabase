@@ -21,7 +21,6 @@
 
 # firebase
 firebase-admin-sdk.json
-src/firebase.ts
 
 npm-debug.log*
 yarn-debug.log*
