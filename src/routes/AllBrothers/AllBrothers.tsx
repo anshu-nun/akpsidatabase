@@ -6,7 +6,6 @@ import BrotherCard from '../../components/BrotherCard/BrotherCard';
 import Loading from '../../components/Loading/Loading';
 import linkedin from '../../assets/linkedin.svg';
 import SearchBar from '../../components/SearchBar/SearchBar';
-import { get } from 'http';
 
 interface Brother {
     id: string;
