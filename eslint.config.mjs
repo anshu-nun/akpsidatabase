@@ -8,11 +8,7 @@ import pluginReact from "eslint-plugin-react";
 export default [
   {files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]},
   {languageOptions: { globals: globals.browser }},
-  {rules: {
-    "no-unused-vars": "off",
-    "no-redeclare": "off",
-    "no-undef": "error"
-  }},
+  {rules: {}},
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
