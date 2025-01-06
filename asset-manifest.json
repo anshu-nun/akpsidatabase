@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/akpsidatabase/static/css/main.2e0fdc33.css",
+    "main.js": "/akpsidatabase/static/js/main.b4b2fa38.js",
+    "static/js/453.e4c522ed.chunk.js": "/akpsidatabase/static/js/453.e4c522ed.chunk.js",
+    "static/media/linkedin.svg": "/akpsidatabase/static/media/linkedin.c304a4148cde039a54532585f4d47b48.svg",
+    "index.html": "/akpsidatabase/index.html",
+    "main.2e0fdc33.css.map": "/akpsidatabase/static/css/main.2e0fdc33.css.map",
+    "main.b4b2fa38.js.map": "/akpsidatabase/static/js/main.b4b2fa38.js.map",
+    "453.e4c522ed.chunk.js.map": "/akpsidatabase/static/js/453.e4c522ed.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2e0fdc33.css",
+    "static/js/main.b4b2fa38.js"
+  ]
+}
