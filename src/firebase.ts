@@ -4,13 +4,15 @@ import {getFirestore} from "@firebase/firestore";
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASEKEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    authDomain: "akpsidb.firebaseapp.com",
+    projectId: "akpsidb",
+    storageBucket: "akpsidb.appspot.com",
+    messagingSenderId: "162687480408",
+    appId: "1:162687480408:web:5bbc8821aba85a5ff3502d",
+    measurementId: "G-HSPBT5WEV5"
   };
   
 const app = initializeApp(firebaseConfig)
 export const db = getFirestore(app);
+
+const analytics = getAnalytics(app);
