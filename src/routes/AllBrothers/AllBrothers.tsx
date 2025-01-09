@@ -21,9 +21,10 @@ interface Brother {
 
 const AllBrothers = () => {
     const [view, setView] = useState('icons');
-    const [brothers, setBrothers] = useState<Brother[]>([]);
+    const [search, setSearch] = useState<Brother[]>([]);
+    const [searchedBrothers, setSearchedBrothers] = useState<Brother[]>([]);
     const [loading, setLoading] = useState(true); 
-
+    const [brothers, setBrothers] = useState<Brother[]>([]);
     const fetchBrothers = async () => {
         try {
           const querySnapshot = await getDocs(collection(db, 'members'));
@@ -39,6 +40,7 @@ const AllBrothers = () => {
             pledge_class: doc.data().pledge_class
           })) as Brother[];
           setBrothers(brothersList);
+          setSearch(brothersList);
         } catch (error) {
           console.error('Error fetching members:', error);
         }
@@ -53,7 +55,7 @@ const AllBrothers = () => {
             return brother.first_name.toLowerCase().includes(query.toLowerCase()) || brother.last_name.toLowerCase().includes(query.toLowerCase());
         }));
 
-        setBrothers(filtered);
+        setSearch(filtered);
     }
 
     useEffect(() => {
@@ -83,7 +85,7 @@ const AllBrothers = () => {
                 </div>
                 <div className='px-12 min-h-full min-w-full'></div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-12 my-6'>
-                    {brothers.map((brother) => (
+                    {search.map((brother) => (
                         <BrotherCard id={brother.id} name={brother.first_name + " " + brother.last_name} image='test'/>
                     ))}
                 </div>
@@ -118,7 +120,7 @@ const AllBrothers = () => {
                         </tr>
                     </thead>
                     <tbody>
-                            {brothers.map((brother) => (
+                            {search.map((brother) => (
                                 <tr>
                                     <td>
                                         <div className="flex justify-between items-center">

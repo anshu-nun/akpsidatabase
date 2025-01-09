@@ -22,9 +22,10 @@ const SearchBar: React.FC<SearchBarProps> = ({ filterBrothers}) => {
     const [query, setQuery] = React.useState('');
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setQuery(e.target.value);
-        filterBrothers(query);
-        console.log(query);
+        const newQuery = e.target.value;
+        setQuery(newQuery);
+        filterBrothers(newQuery);
+        console.log(newQuery);
     }
 
 
